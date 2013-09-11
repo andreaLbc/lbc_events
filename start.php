@@ -9,7 +9,7 @@
  */
 
 
-// INITIALIZE THE PMMUGIN
+// INITIALIZE THE PLUGIN
 elgg_register_event_handler('init','system', 'events_init'); 
 
 
@@ -57,9 +57,6 @@ function events_init(){
 	
 	// extend group main page
 	elgg_extend_view('groups/tool_latest', 'events/group_module');
-	
-	//Css
-	elgg_extend_view('css/elgg', 'events/css');
 		
 }
 
